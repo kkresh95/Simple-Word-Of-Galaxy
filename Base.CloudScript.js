@@ -25,6 +25,8 @@ const proffesions =
 	SubtractVc(userVcBalances, CURRENCY_MONEY_GM, 1);
 	log.info("You lost a life.");
 
+
+	var message = "Hello " + currentPlayerId + "!";
 	 return { messageValue: message };
 };
 
