@@ -22,8 +22,11 @@ const proffesions =
     var GetUserInventoryResult = server.GetUserInventory(GetUserInventoryRequest);
 	var userVcBalances = GetUserInventoryResult.VirtualCurrency
 
+	//args.keyName = JSON.parse(args);
+
 	SubtractVc(userVcBalances, CURRENCY_MONEY_GM, 1);
 	log.info("You lost a life.");
+	//log.debug("helloWorld:", { input: args.inputValue });
 
 
 	var message = "Hello " + currentPlayerId + "!";
@@ -111,9 +114,9 @@ handlers.helloWorld = function (args, context) {
     // take a message string and an optional object.
     log.info(message);
     var inputValue = null;
-    if (args && args.inputValue)
-        inputValue = args.inputValue;
-    log.debug("helloWorld:", { input: args.inputValue });
+    if (args && args.inputValueee)
+        inputValue = args.inputValueee;
+    log.debug("helloWorld:", { input: args.inputValueee });
 
     // The value you return from a Cloud Script function is passed back 
     // to the game client in the ExecuteCloudScript API response, along with any log statements
