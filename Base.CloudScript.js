@@ -1,8 +1,9 @@
 // Welcome to your first Cloud Script revision!
 
 
-var CURRENCY_MONEY_GM = "GM";					  // currency money GM Game Money
-var CURRENCY_MONEY_CR  = "CR";					  // currency Money CR Crystal Money
+var CURRENCY_MONEY_GM = "WC";					  // currency money GM Game Money
+var CURRENCY_MONEY_CR  = "GC";					  // currency Money CR Crystal Money
+
 
 const proffesions = 
 {
@@ -23,6 +24,8 @@ const proffesions =
 
 	SubtractVc(userVcBalances, CURRENCY_MONEY_GM, 1);
 	log.info("You lost a life.");
+
+	 return { messageValue: message };
 };
 
 
