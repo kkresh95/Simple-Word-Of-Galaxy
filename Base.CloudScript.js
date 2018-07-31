@@ -151,7 +151,7 @@ handlers.helloWorld = function (args, context) {
     log.info(message);
 
 
-    return { messageValue: message  + "   ta  : " + ta};
+    return { messageValue: message  ;
 };
 
 // This is a simple example of making a PlayFab server API call
