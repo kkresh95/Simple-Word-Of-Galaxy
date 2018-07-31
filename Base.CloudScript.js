@@ -141,7 +141,7 @@ handlers.helloWorld = function (args, context) {
 			context(key, data[key]);
 			ta += " / " + (key , data[key]);
 		}
-	}
+	} 
 
 
     var message = "Hello " + currentPlayerId + " ! " + args.keyName + "   Value : " + args.valueString  + " PRO " + args.valueStringg;
@@ -151,7 +151,7 @@ handlers.helloWorld = function (args, context) {
     log.info(message);
 
 
-    return { messageValue: message  ;
+    return { messageValue: message + ta } ;
 };
 
 // This is a simple example of making a PlayFab server API call
