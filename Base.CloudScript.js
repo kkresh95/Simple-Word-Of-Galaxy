@@ -133,7 +133,7 @@ handlers.helloWorld = function (args, context) {
     // The pre-defined "currentPlayerId" variable is initialized to the PlayFab ID of the player logged-in on the game client. 
     // Cloud Script handles authenticating the player automatically.
 	var ta = "";
-	//var cart = JSON.parse ( args );
+/*//var cart = JSON.parse ( args );
 	for(var key in args)
 	{
 		if(arg.hasOwnProperty(key))
@@ -141,7 +141,7 @@ handlers.helloWorld = function (args, context) {
 			context(key, data[key]);
 			ta += " / " + (key , data[key]);
 		}
-	} 
+	}  */
 
 
     var message = "Hello " + currentPlayerId + " ! " + args.keyName + "   Value : " + args.valueString  + " PRO " + args.valueStringg;
@@ -151,7 +151,7 @@ handlers.helloWorld = function (args, context) {
     log.info(message);
 
 
-    return { messageValue: message + ta } ;
+    return { messageValue: message  } ;
 };
 
 // This is a simple example of making a PlayFab server API call
