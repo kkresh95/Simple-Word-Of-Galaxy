@@ -133,11 +133,7 @@ handlers.helloWorld = function (args, context) {
     // The pre-defined "currentPlayerId" variable is initialized to the PlayFab ID of the player logged-in on the game client. 
     // Cloud Script handles authenticating the player automatically.
 
-	var cart = JSON.parse ( args );
-
-
-
-
+	//var cart = JSON.parse ( args );
 
     var message = "Hello " + currentPlayerId + " ! " + args.keyName + "   Value : " + args.valueString  + " PRO " + args.valueStringg;
     // You can use the "log" object to write out debugging statements. It has
@@ -146,7 +142,6 @@ handlers.helloWorld = function (args, context) {
     log.info(message);
 
 
-    // (https://api.playfab.com/playstream/docs/PlayStreamEventModels/player/player_executed_cloudscript)
     return { messageValue: message };
 };
 
