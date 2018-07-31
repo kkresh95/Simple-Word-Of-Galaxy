@@ -144,7 +144,7 @@ handlers.helloWorld = function (args, context) {
 	}
 
 
-    var message = "Hello " + currentPlayerId + " ! " + args.keyName + "   Value : " + args.valueString  + " PRO " + args.1;
+    var message = "Hello " + currentPlayerId + " ! " + args.keyName + "   Value : " + args.valueString  + " PRO " + args.valueStringg;
     // You can use the "log" object to write out debugging statements. It has
     // three functions corresponding to logging level: debug, info, and error. These functions
     // take a message string and an optional object.
